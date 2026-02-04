@@ -1,2 +1,8 @@
 recipe-scrapers
 beautifulsoup4
+requests
+llama-index
+llama-index-embeddings-ollama
+qdrant-client
+torch
+transformers

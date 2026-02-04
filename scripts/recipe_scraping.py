@@ -51,12 +51,13 @@ if __name__ == "__main__":
         recipe = get_recipe(url_prefix, url_suffix)
 
         if "title" in recipe.keys():
+            
             print("Scraping ", recipe["title"], " ...")
         
-        # Saving each recipe as a JSON file
-        os.makedirs("./data", exist_ok=True)
-        with open(f"./data/recipe{k}.json", "w", encoding="utf-8") as f:
-            f.write(json.dumps(recipe, ensure_ascii=False, indent=4))
+            # Saving each recipe as a JSON file
+            os.makedirs("./data", exist_ok=True)
+            with open(f"./data/recipe{k}.json", "w", encoding="utf-8") as f:
+                f.write(json.dumps(recipe, ensure_ascii=False, indent=4))
 
 
 
