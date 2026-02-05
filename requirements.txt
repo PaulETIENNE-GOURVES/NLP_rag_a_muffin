@@ -6,3 +6,4 @@ llama-index-embeddings-ollama
 qdrant-client
 torch
 transformers
+streamlit

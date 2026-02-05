@@ -55,7 +55,5 @@ if __name__ == "__main__":
             upload_recipe_to_qdrant(recipe, client, embed_model, idx)
 
         client.close()
-    # Si la bdd qdrant existe déjà, charge la bdd 
-    else:
-        pass
+
 
